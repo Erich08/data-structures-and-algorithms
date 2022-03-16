@@ -13,6 +13,7 @@ const addOne = (arr) => {
 
   arr.forEach(num => {
     plusOne.push(num + 1);
+
   });
   return plusOne;
 };
@@ -30,7 +31,9 @@ const addExclamation = (arr) => {
 
   arr.forEach(add => {
     exclamation.push(add + '!');
+
   });
+
 
   return exclamation;
 };
@@ -48,7 +51,9 @@ const allUpperCase = (arr) => {
 
   arr.forEach(capitalize => {
     upperCase.push(capitalize.toUpperCase());
+
   });
+
 
   return upperCase;
 };
@@ -72,11 +77,13 @@ const greeting = (word) => {
 
 const speaker = (words, callback) => {
   // Solution code here...
+
   const upperCase = [];
   words.forEach(caps => {
     upperCase.push(callback[caps]);
   });
   return upperCase;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
