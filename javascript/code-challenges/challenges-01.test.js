@@ -72,6 +72,12 @@ const greeting = (word) => {
 
 const speaker = (words, callback) => {
   // Solution code here...
+
+  const upperCase = [];
+  words.forEach((caps) => {
+    upperCase.push(callback[caps]);
+  });
+  return upperCase;
 };
 
 /* ------------------------------------------------------------------------------------------------
